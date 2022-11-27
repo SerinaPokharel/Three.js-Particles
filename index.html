@@ -1,10 +1,13 @@
-<html>
+<!DOCTYPE html>
+<html lang="en" >
 <head>
-<meta charset="utf-8">
-<titlt>Three.js</title>
-<link rel="stylesheet" href="sytle.css">
+  <meta charset="UTF-8">
+  <title>ThreeJS</title>
+  <link rel="stylesheet" href="./style.css">
+
 </head>
 <body>
+<!-- partial:index.partial.html -->
 <script>
   THREE.ShapeUtils.triangulateShape = (function() {
   		var pnlTriangulator = new PNLTRI.Triangulator();
@@ -19,6 +22,14 @@
 <div id="instructions">
   Aryan Shrestha
 </div>
-<script type="text/javascript" src="main.js"></script>
+<!-- partial -->
+  <script src='//cdnjs.cloudflare.com/ajax/libs/three.js/r75/three.min.js'></script>
+<script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/175711/TextGeometry.js'></script>
+<script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/175711/FontUtils.js'></script>
+<script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/175711/pnltri.min.js'></script>
+<script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/175711/droid_sans_bold.typeface.js'></script>
+<script src='//cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js'></script>
+<script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/175711/bas.js'></script><script  src="./main.js"></script>
+
 </body>
 </html>
