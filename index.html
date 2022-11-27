@@ -1,0 +1,24 @@
+<html>
+<head>
+<meta charset="utf-8">
+<titlt>Three.js</title>
+<link rel="stylesheet" href="sytle.css">
+</head>
+<body>
+<script>
+  THREE.ShapeUtils.triangulateShape = (function() {
+  		var pnlTriangulator = new PNLTRI.Triangulator();
+  		return function triangulateShape(contour, holes) {
+  			return pnlTriangulator.triangulate_polygon([contour].concat(holes));
+  		};
+  	})();
+</script>
+
+<div id="three-container"></div>
+
+<div id="instructions">
+  Aryan Shrestha
+</div>
+<script type="text/javascript" src="main.js"></script>
+</body>
+</html>
